@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of Two Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body> 
+    <div id="container">
+        <h2>Largest of Two Numbers</h2>
+        <form onsubmit="submitHandler(event)">
+            <div>
+                <label for="inp1">Input-1:</label>
+                <input type="number" name="inp1" id="inp1" required>
+            </div>
+            <div>
+                <label for="inp2">Input-2:</label>
+                <input type="number" name="inp2" id="inp2" required>
+            </div>
+            <div>
+                <label for="logic">Choose logic</label>
+                <select name="logic" id="logic">
+                    <option value="null">Choose logic</option>
+                    <option value="condition">Condition</option>
+                    <option value="ternary">Ternary</option>
+                    <option value="math">Math logic</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Find</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
